@@ -1,10 +1,10 @@
-from flask_wtf import Flaskform
-from wtform import SubmitField, IntegerField, StringField
+from flask_wtf import FlaskForm
+from wtforms import SubmitField, IntegerField, StringField, PasswordField
 
 
-class RegistrarEstudianteForms(Flaskform):
+class RegistrarEstudianteForms(FlaskForm):
     numero_documento = IntegerField("Digita tus nombres")
-    password = StringField("Digita Tu Contraseña")
+    password = PasswordField("Digita Tu Contraseña")
     nombre_estudiante = StringField("Digita Tus Nombres")
     apellido_estudiante = StringField("Digita Tus Apellidos")
     tipo_documento = StringField("Digitas Tipo De Documento")
